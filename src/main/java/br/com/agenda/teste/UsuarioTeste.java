@@ -1,15 +1,15 @@
 package br.com.agenda.teste;
 
 import java.sql.SQLException;
-import br.com.agenda.dao.UsuarioDAO;
+import br.com.agenda.dao.LocalDAO;
 
 public class UsuarioTeste {
 	
 	public static void main (String[] args) throws ClassNotFoundException, SQLException {
 		
-		UsuarioDAO dao = new UsuarioDAO();
+		LocalDAO dao = new LocalDAO();
 		
-		dao.inserir("Vinicius");
+		dao.inserir("posto de gasolina");
 		
 	}
 	
