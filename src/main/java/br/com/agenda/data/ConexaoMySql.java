@@ -17,7 +17,7 @@ public class ConexaoMySql implements Conexao {
 	private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/agenda?useTimezone=true&serverTimezone=UTC";
 	
 	public ConexaoMySql() throws SQLException, ClassNotFoundException {
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		this.connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
 		this.connection.setAutoCommit(false);
 		
